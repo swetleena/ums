@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>User Registration</title>
+</head>
+<body>
+<h1>Registration</h1>
+<form action="/registration" method="post">
+<div style="float:left">
+<table>
+<tr>
+<td>Name:</td><td><input type="text" name="username" required/></td>
+</tr>
+<tr>
+<td>Email:</td><td><input type="email" name="email" required/></td>
+</tr>
+<tr>
+<td>DOB:</td><td><input type="text" name="dob"/></td>
+</tr>
+<tr>
+<td>Mobile:</td><td><input type="text" name="mobile"/></td>
+</tr>
+<tr>
+<td>Gender:</td><td><input type="radio" name="gender"/> Male</td>
+</tr>
+<tr>
+<td> </td><td><input type="radio" name="gender"/> Female</td>
+</tr>
+</table>
+</div>
+<div>
+<img height ="100" width="100"/><br/>
+<input type="file" name="dp"/>
+</div>
+<input type="submit" value="submit" > 
+</form>
+</body>
+</html>
