@@ -30,9 +30,7 @@ app.get('/userList',(req,res)=>{
       userDelete+=   "alert('Deleted Sucessfully');\n";
       userDelete+=   "location.reload();\n";
       userDelete+=   " },\n";
-      userDelete+=   "error: function(jqXHR, textStatus, errorThrown) {\n";
-      userDelete+=   "alert('Some problem while deleting')\n"
-      userDelete+=   "}});}</script>";
+      userDelete+=   "});}</script>";
 
 
  var doc = "<html><head><title>All Users</title> "+userDelete+"</head><body>";
