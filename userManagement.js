@@ -61,7 +61,7 @@ USERS.forEach(function(e){
   {
  form+= "<div style='float:left'><table>";
  form+="<tr><td>Name:</td><td><input type='text' name='username' value ='"+ e.username +"'/></td></tr>";
- form+="<tr><td>Email:</td><td><input type='email' name='email' value = '"+e.email+"' disable/></td></tr>";
+ form+="<tr><td>Email:</td><td><input type='email' disabled name='email' value = '"+e.email+"'/></td></tr>";
  form+="<tr><td>DOB:</td><td><input type='text' name='dob' value = '"+e.dob+"'/></td></tr>";
  form+="<tr><td>Mobile:</td><td><input type='text' name='mobile' value = '"+e.mobile+"'/></td></tr>";
  form+="</table></div>";
@@ -108,7 +108,6 @@ app.post('/userList/:eid/update', (req, res)=>{
    if(userEmail == e.email)
    {
       e.username = req.body.username,
-      e.email = req.body.email,
       e.dob =req.body.dob,
       e.mobile =req.body.mobile, 
       e.dp =req.body.dp 
